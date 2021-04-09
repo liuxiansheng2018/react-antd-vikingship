@@ -1,7 +1,7 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 
-import Menu from './menu'
+import Menu from './index'
 
 const menuDefault = () =>(
     <Menu defaultIndex="0">

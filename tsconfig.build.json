@@ -1,0 +1,18 @@
+{
+    "compilerOptions": { //控制compiler执行后的文件
+        "outDir": "dist",
+        "module": "esnext",
+        "target": "ES5",
+        "declaration": true, // 给每个ts 文件生成 .d 文件， 让用户获得提示
+        "jsx": "react",
+        "moduleResolution": "node", // 一定要加不然路径找不到
+        "allowSyntheticDefaultImports": true, // 让它适用于 default as button 写法
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "src/**/*.test.tsx",
+        "src/**/*.stories.tsx"
+    ]
+}

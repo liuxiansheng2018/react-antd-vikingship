@@ -24,4 +24,11 @@ addParameters({
         header: false
     }
 })
-configure(require.context('../src/components', true, /\.stories\.tsx$/), module)
+const loaderFn = () => {
+    const allExports = [require('../src/welcome.stories.tsx')];
+    const req = require.context('../src/components', true, /\.stories\.tsx$/);
+    req.keys().forEach(fname => allExports.push(req(fname)));
+    return allExports;
+  };
+  configure(loaderFn, module);
+// configure(require.context('../src/components', true, /\.stories\.tsx$/), module)

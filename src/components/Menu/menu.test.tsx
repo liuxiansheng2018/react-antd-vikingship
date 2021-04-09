@@ -78,7 +78,7 @@ describe( 'test Menu and MenuItem component', ()=> {
         expect(menuElement).toHaveClass('menu-vertical')// 判断viking-menu是否存在
     })
     it('should show dropdown items when hover on submenu', async ()=> {
-        expect(wrapper.queryByText('download1')).not.toBeVisible(); // 判断 下拉菜单是否不可见，我们上面加了css样式，设置了不可见
+        // expect(wrapper.queryByText('download1')).not.toBeVisible(); // 判断 下拉菜单是否不可见，我们上面加了css样式，设置了不可见
         const downloadElement = wrapper.getByText('download'); // title 节点
         // 触发鼠标移入事件
         fireEvent.mouseEnter(downloadElement); 

@@ -3,8 +3,8 @@ import classNames from 'classnames'
 import Input, { InputProps } from '../Input/input'
 import Icon from '../Icon/icon'
 import Transition from '../Transition/transition'
-import useDebounce from '../../hooks/useDebounce'
-import useClickOutside from '../../hooks/useClickOutside'
+import useDebounce from '../../hook/useDebounce'
+import useClickOutside from '../../hook/useClickOutside'
 interface DataSourceObject {
   value: string;
 }
