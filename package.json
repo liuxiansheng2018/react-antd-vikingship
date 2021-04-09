@@ -48,7 +48,7 @@
     "build-storybook": "build-storybook -s public",
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "node-sass ./src/styles/index.scss ./dist/index.css",
-    "postpublish": "npm run build-grounp",
+    "postpublishOnly": "npm run build-grounp",
     "lint": "eslint --ext js,ts,tsx src --max-warnings 5",
     "test:nowatch": "cross-env CI=true react-scripts test",
     "test:watch": "npm run test:nowatch && npm run lint && npm run postpublish"
