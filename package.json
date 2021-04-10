@@ -25,6 +25,7 @@
     "dist"
   ],
   "dependencies": {
+    "@ant-design/icons": "^4.6.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
@@ -34,6 +35,7 @@
     "css-loader": "^5.2.0",
     "http-server": "^0.12.3",
     "react-scripts": "4.0.3",
+    "react-text-loop": "^2.3.0",
     "react-transition-group": "^4.4.1",
     "web-vitals": "^1.0.1",
     "webpack": "4.44.2"
